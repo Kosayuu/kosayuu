@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     // <main> 相当于 Figma 的顶层 Frame
@@ -21,9 +23,12 @@ export default function Home() {
 
         {/* 按钮容器 */}
         <div className="pt-8">
-          <button className="px-8 py-3 bg-neutral-900 text-white rounded-full font-medium hover:bg-neutral-700 transition-colors">
+          <Link
+            href="/works"
+            className="inline-block px-8 py-3 bg-neutral-900 text-white rounded-full font-medium hover:bg-neutral-700 transition-colors"
+          >
             View My Works
-          </button>
+          </Link>
         </div>
 
       </div>
