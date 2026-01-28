@@ -8,20 +8,20 @@ const nav = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-neutral-200/80 bg-white/80 backdrop-blur-sm">
-      <nav className="mx-auto flex h-14 max-w-4xl items-center justify-between px-6">
+    <header className="sticky top-0 z-50 border-b border-neutral-200/80 bg-white/90 backdrop-blur-md">
+      <nav className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4 sm:px-6">
         <Link
           href="/"
-          className="text-lg font-semibold text-neutral-900 hover:text-neutral-600"
+          className="text-lg font-semibold text-neutral-900 hover:text-neutral-600 transition-colors"
         >
           Kosayuu
         </Link>
-        <ul className="flex gap-6">
+        <ul className="flex gap-6 sm:gap-8">
           {nav.map(({ href, label }) => (
             <li key={href}>
               <Link
                 href={href}
-                className="text-neutral-600 hover:text-neutral-900 font-medium transition-colors"
+                className="text-sm sm:text-base text-neutral-600 hover:text-neutral-900 font-medium transition-colors"
               >
                 {label}
               </Link>
